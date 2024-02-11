@@ -1,35 +1,27 @@
-import { getRecipe, getSource } from './api.js';
+const apiKey = "83391e00768640b29c383a671ab06380";
+const baseUrl = "https://api.spoonacular.com";
 
-document.getElementById('searchBtn').addEventListener('click', async () => {
-    const query = document.getElementById('search').value;
-    try {
-        const result = await getRecipe(query);
-        displayRecipe(result);
-    } catch (error) {
-        console.error("Error fetching recipe:", error);
-    }
-});
+export async function getRecipe(query) {
+  const url = `${baseUrl}/recipes/complexSearch?apiKey=${apiKey}&query=${query}`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return response.json();
+}
 
-document.getElementById('sourceButton').addEventListener('click', async () => {
-    try {
-        const recipeId = document.querySelector('.result').dataset.recipeId;
-        const sourceUrl = await getSource(recipeId);
-        window.open(sourceUrl, "_blank");
-    } catch (error) {
-        console.error("Error fetching recipe source:", error);
-    }
-});
-
-function displayRecipe(result) {
-    const outputDiv = document.getElementById("output");
-    if (result) {
-        outputDiv.innerHTML = `
-            <div class='result' data-recipe-id='${result.id}'>
-                <h1>${result.title}</h1>
-                <img src='${result.image}' width='400'>
-                <div class='ready-in'>Ready in ${result.readyInMinutes} minutes</div>
-            </div>`;
-    } else {
-        outputDiv.innerHTML = "<p>No recipe found</p>";
-    }
+export async function postRequest(data) {
+  const url = `${baseUrl}api.spoonacular.com/recipes/complexSearch`; // Replace with your actual POST endpoint
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      // Add other headers if necessary
+    },
+    body: JSON.stringify(data),
+  });
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return response.json();
 }
