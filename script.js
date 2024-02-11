@@ -22,7 +22,7 @@ function getRecipe(query) {
             "</h1><img src='" +
             res.baseUri +
             result.image +
-            "' width='400'><div class='ready-in'>Ready in " +
+            "' width='400'><div class='ready-in'>Cooking time: " +
             result.readyInMinutes +
             " minutes</div></div>"
         );
