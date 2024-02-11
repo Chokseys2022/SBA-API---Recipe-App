@@ -1,28 +1,35 @@
-// api.js
-const apiKey = "83391e00768640b29c383a671ab06380";
+import { getRecipe, getSource } from './api.js';
 
-export async function getRecipe(query) {
-  const response = await fetch(
-    `https://api.spoonacular.com/recipes/search?apiKey=${apiKey}&query=${query}`
-  );
-  if (!response.ok) {
-    throw new Error("Failed to fetch recipe");
-  }
-  const data = await response.json();
-  if (data.results.length > 0) {
-    return data.results[0];
-  } else {
-    throw new Error("No recipe found");
-  }
-}
+document.getElementById('searchBtn').addEventListener('click', async () => {
+    const query = document.getElementById('search').value;
+    try {
+        const result = await getRecipe(query);
+        displayRecipe(result);
+    } catch (error) {
+        console.error("Error fetching recipe:", error);
+    }
+});
 
-export async function getSource(recipeId) {
-  const response = await fetch(
-    `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`
-  );
-  if (!response.ok) {
-    throw new Error("Failed to fetch recipe source");
-  }
-  const data = await response.json();
-  return data.sourceUrl;
+document.getElementById('sourceButton').addEventListener('click', async () => {
+    try {
+        const recipeId = document.querySelector('.result').dataset.recipeId;
+        const sourceUrl = await getSource(recipeId);
+        window.open(sourceUrl, "_blank");
+    } catch (error) {
+        console.error("Error fetching recipe source:", error);
+    }
+});
+
+function displayRecipe(result) {
+    const outputDiv = document.getElementById("output");
+    if (result) {
+        outputDiv.innerHTML = `
+            <div class='result' data-recipe-id='${result.id}'>
+                <h1>${result.title}</h1>
+                <img src='${result.image}' width='400'>
+                <div class='ready-in'>Ready in ${result.readyInMinutes} minutes</div>
+            </div>`;
+    } else {
+        outputDiv.innerHTML = "<p>No recipe found</p>";
+    }
 }

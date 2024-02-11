@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe Search</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="search-container">
-        <input id="search" type="text" />
-        <button id="searchBtn">Search</button>
-      </div>
-      <div id="output"></div>
-      <button id="sourceButton">Recipe Source</button>
+<html>
+<head>
+  <title>Recipe Search</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="search-container">
+      <input id="search" type="text" />
+      <button id="searchButton">
+        Search
+      </button>
     </div>
+    <div id="output"></div>
+    <button id="sourceButton">
+      Recipe Source
+    </button>
+  </div>
 
-    <script src="main.js" type="module"></script>
-    <!-- Notice the type="module" attribute -->
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>

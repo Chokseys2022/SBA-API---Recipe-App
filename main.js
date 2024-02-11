@@ -1,4 +1,3 @@
-// main.js
 import { getRecipe, getSource } from './api.js';
 
 document.getElementById('searchBtn').addEventListener('click', async () => {
@@ -12,7 +11,12 @@ document.getElementById('searchBtn').addEventListener('click', async () => {
 });
 
 document.getElementById('sourceButton').addEventListener('click', async () => {
-    const recipeId = document.querySelector('.result').dataset.recipeId;
+    const resultElement = document.querySelector('.result');
+    if (!resultElement) {
+        console.error("No recipe displayed");
+        return;
+    }
+    const recipeId = resultElement.dataset.recipeId;
     try {
         const sourceUrl = await getSource(recipeId);
         window.open(sourceUrl, "_blank");

@@ -105,7 +105,7 @@
         var recipeId = document.querySelector(".result").dataset.recipeId;
         $.ajax({
           url:
-            "https://api.spoonacular.com/recipes/" +
+            "https://api.spoonacular.com/recipes/complexSearch" +
             recipeId +
             "/information?apiKey=83391e00768640b29c383a671ab06380",
           success: function (res) {
