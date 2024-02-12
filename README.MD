@@ -1,4 +1,4 @@
-#Recipe Search Web Application - connectiong to an API
+# Recipe Search Web Application - connectiong to an API
 
 This is a simple web application that allows users to search for recipes using a keyword. It fetches recipe data from the Spoonacular API and displays the results on the webpage. Users can also view the source of the recipe by clicking on the "Get the recipe" button.
 
