@@ -1,4 +1,6 @@
-// source.js
+// source.js - Contains functions for getting the source of a recipe.
+//*******************************************************************//
+
 // Import apiKey from api.js
 import { apiKey } from "./api.js";
 
@@ -8,7 +10,7 @@ export async function getSource(recipeId) {
 
   // Fetch data
   const response = await fetch(url);
-  // Check if the response is not OK
+  // Check for errors
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
@@ -17,3 +19,5 @@ export async function getSource(recipeId) {
   // Open recipe source URL in new tab
   window.open(data.sourceUrl, "_blank");
 }
+
+//*******************************END CODE***********************************************//

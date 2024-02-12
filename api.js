@@ -1,5 +1,5 @@
 //api.js: Contains functions for fetching recipe data from the Spoonacular API.
-//*****************************************************************************
+//*****************************************************************************//
 
 // Defining Spoonacular API key
 const apiKey = "83391e00768640b29c383a671ab06380";

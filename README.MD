@@ -18,9 +18,9 @@ This is a simple web application that allows users to search for recipes using a
 
 ## File Structure
 
-- `index.html`: Contains the HTML structure of the web application.
-- `styles.css`: Contains the CSS styles for the web application.
-- `script.js`: Contains the JavaScript code for fetching and displaying recipes.
-- `api.js`: Contains functions for fetching recipe data from the Spoonacular API.
-- `source.js`: Contains functions for fetching the source of a recipe.
+- `index.html`: Contains HTML structure of the web application.
+- `styles.css`: Contains CSS styles for the web application.
+- `script.js`: ContainsJ avaScript code for fetching and displaying recipes.
+- `api.js`: Contains functions for getting recipe data from the Spoonacular API.
+- `source.js`: Contains functions for getting the source of a recipe.
 - `README.md`: Contains information about the project.

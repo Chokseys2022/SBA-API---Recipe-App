@@ -1,6 +1,8 @@
-/* styles.css */
+/* styles.css -Contains styles for web application. */
+/*****************************************************/
+
 body {
-  background-color: whitesmoke; /* Set background color */
+  background-color: whitesmoke; 
   font-family: "Arial", sans-serif; /* Set font family */
   display: flex; /* Set display property to flex */
   align-items: center; /* Align items vertically */
