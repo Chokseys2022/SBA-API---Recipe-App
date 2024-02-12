@@ -1,39 +1,30 @@
-<!-- index.html -->
+<!-- index.html Contains the HTML structure of the web application.-->
+//********************************************************************
 
 <!DOCTYPE html>
 <html>
-  <!-- Begins the HTML document -->
   <head>
-    <!-- Contains meta-information about the document -->
     <title>Recipe Search</title>
-    <!-- Sets the title of the document -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <!-- Links an external stylesheet for styling -->
   </head>
-  <!-- <h1>Search for Your New Favorite Recipes</h1> -->
-
   <body>
-   
-      <h1>Search for your new favorite recipes here</h1></
-    <!-- Contains the content of the document -->
+    <h1>Search for your new favorite recipes here</h1>
+
+    <!-- doc contents -->
     <div class="container">
-      <!-- Defines a container div -->
       <div class="search-container">
-        <!-- Defines a container for search elements -->
         <input id="search" type="text" />
-        <!-- Input field for searching -->
         <button id="searchButton">Search</button>
-        <!-- Button for triggering the search -->
       </div>
+
       <div id="output"></div>
-      <!-- Container for displaying search results -->
       <button id="sourceButton">Get the recipe</button>
-      <!-- Button for displaying recipe source -->
     </div>
 
+    <!--inks to libraries and setting type to module-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Links jQuery library -->
     <script src="script.js" type="module"></script>
-    <!-- Links external JavaScript file -->
   </body>
 </html>
+
+<!--********************************END CODE********************************************-->
