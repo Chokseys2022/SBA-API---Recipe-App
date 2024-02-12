@@ -1,7 +1,7 @@
 /* styles.css - Contains styles for web application. */
 /*****************************************************/
 
-/* Body Styles */
+/* Body */
 body {
   background-color: whitesmoke;
   font-family: "Arial", "Times New Roman", Times, sans-serif;
@@ -13,7 +13,7 @@ body {
   margin: 0;
 }
 
-/* Heading Styles */
+/* Heading */
 h1 {
   color: lightslategrey;
 }
@@ -22,7 +22,7 @@ h3 {
   color: lightslategrey;
 }
 
-/* Container Styles */
+/* Container */
 .container {
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-/* Search Container Styles */
+/* Search Container */
 .search-container {
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ h3 {
   margin-right: 20px;
 }
 
-/* Input Styles */
+/* Input */
 input[type="text"] {
   width: 200px;
   padding: 10px;
@@ -47,7 +47,7 @@ input[type="text"] {
   margin-right: 10px;
 }
 
-/* Button Styles */
+/* Button */
 button {
   background-color: lightslategrey;
   border: 0;
@@ -71,7 +71,7 @@ button:focus {
   outline: none;
 }
 
-/* Result Styles */
+/* Result */
 .result {
   background-color: whitesmoke;
   display: flex;
@@ -86,12 +86,12 @@ button:focus {
   margin: 10px;
 }
 
-/* Recipe Image Styles */
+/* Recipe Image */
 .recipe-image {
-  width: 400px;
+  width: 600px;
 }
 
-/* Result Image Styles */
+/* Result Image */
 .result img {
   object-fit: cover;
   max-height: 70%;
