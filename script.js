@@ -34,7 +34,7 @@ function getRecipe(query) {
           // Set the HTML content of the output div
           outputDiv.innerHTML = `
                       <div class='result' data-recipe-id='${recipeId}'>
-                          <h1>${result.title}</h1>
+                          <h3>${result.title}</h3>
                           <img src='${res.baseUri}${result.image}' width='400'>
                           <div class='ready-in'>Cooking time: ${result.readyInMinutes} minutes</div>
                       </div>

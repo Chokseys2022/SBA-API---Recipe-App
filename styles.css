@@ -14,6 +14,9 @@ h1 {
   color: lightslategrey;
 }
 
+h3 {
+  color: lightslategrey;
+}
 .container {
   display: flex; /* Set display property to flex */
   align-items: center; /* Align items vertically */
@@ -85,6 +88,7 @@ button:focus {
 }
 
 .ready-in {
+  color: darkgray;
   background-color: white; /* Set background color */
   padding: 10px; /* Set padding */
   width: 100%; /* Set width */
