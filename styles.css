@@ -10,6 +10,8 @@ body {
   margin: 0; /* Remove default margin */
 }
 
+h1{color:lightslategrey;}
+
 .container {
   display: flex; /* Set display property to flex */
   align-items: center; /* Align items vertically */
