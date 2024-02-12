@@ -1,17 +1,19 @@
-/* styles.css -Contains styles for web application. */
+/* styles.css - Contains styles for web application. */
 /*****************************************************/
 
+/* Body Styles */
 body {
-  background-color: whitesmoke; 
-  font-family: "Arial", sans-serif; /* Set font family */
-  display: flex; /* Set display property to flex */
-  align-items: center; /* Align items vertically */
-  justify-content: center; /* Align items horizontally */
-  flex-direction: column; /* Set flex direction to column */
-  height: 100vh; /* Set height to 100% of viewport height */
-  margin: 0; /* Remove default margin */
+  background-color: whitesmoke;
+  font-family: "Arial", "Times New Roman", Times, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
 }
 
+/* Heading Styles */
 h1 {
   color: lightslategrey;
 }
@@ -19,80 +21,90 @@ h1 {
 h3 {
   color: lightslategrey;
 }
+
+/* Container Styles */
 .container {
-  display: flex; /* Set display property to flex */
-  align-items: center; /* Align items vertically */
-  justify-content: center; /* Align items horizontally */
-  margin-bottom: 20px; /* Set margin bottom */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
+/* Search Container Styles */
 .search-container {
-  display: flex; /* Set display property to flex */
-  align-items: center; /* Align items vertically */
-  justify-content: center; /* Align items horizontally */
-  margin-right: 20px; /* Set margin right */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
 }
 
+/* Input Styles */
 input[type="text"] {
-  width: 200px; /* Set width */
-  padding: 10px; /* Set padding */
-  border-radius: 4px; /* Set border radius */
-  border: 1px solid #ccc; /* Set border */
-  margin-right: 10px; /* Set margin right */
+  width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
 }
 
+/* Button Styles */
 button {
-  background-color: lightslategrey; /* Set background color */
-  border: 0; /* Remove border */
-  border-radius: 4px; /* Set border radius */
-  color: #fff; /* Set text color */
-  font-size: 18px; /* Set font size */
-  padding: 10px; /* Set padding */
-  cursor: pointer; /* Set cursor to pointer */
-  transition: background-color 0.3s ease; /* Add transition effect */
+  background-color: lightslategrey;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: darkgrey; /* Change background color on hover */
+  background-color: darkgrey;
 }
 
 button:active {
-  transform: scale(0.5); /* Scale down button on click */
+  transform: scale(0.5);
 }
 
 button:focus {
-  outline: none; /* Remove outline on focus */
+  outline: none;
 }
 
+/* Result Styles */
 .result {
-  background-color: whitesmoke; /* Set background color */
-  display: flex; /* Set display property to flex */
-  flex-direction: column; /* Set flex direction to column */
-  align-items: center; /* Align items vertically */
-  justify-content: center; /* Align items horizontally */
-  height: 500px; /* Set height */
-  width: 700px; /* Set width */
-  border-radius: 8px; /* Set border radius */
-  overflow: hidden; /* Hide overflow */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
-  margin: 10px; /* Set margin */
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 700px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
 }
 
-/* styles.css */
+/* Recipe Image Styles */
 .recipe-image {
-  width: 400px; /* Set width of recipe image */
+  width: 400px;
 }
 
+/* Result Image Styles */
 .result img {
-  object-fit: cover; /* Set image fit */
-  max-height: 70%; /* Set max height */
-  max-width: 100%; /* Set max width */
+  object-fit: cover;
+  max-height: 70%;
+  max-width: 100%;
 }
 
+/* Ready-in Styles */
 .ready-in {
   color: darkgray;
-  background-color: white; /* Set background color */
-  padding: 10px; /* Set padding */
-  width: 100%; /* Set width */
-  text-align: center; /* Set text alignment */
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
 }
+
+/***********************************END CODE***********************************/
