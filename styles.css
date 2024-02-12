@@ -10,7 +10,9 @@ body {
   margin: 0; /* Remove default margin */
 }
 
-h1{color:lightslategrey;}
+h1 {
+  color: lightslategrey;
+}
 
 .container {
   display: flex; /* Set display property to flex */
@@ -64,11 +66,16 @@ button:focus {
   align-items: center; /* Align items vertically */
   justify-content: center; /* Align items horizontally */
   height: 500px; /* Set height */
-  width: 900px; /* Set width */
+  width: 700px; /* Set width */
   border-radius: 8px; /* Set border radius */
   overflow: hidden; /* Hide overflow */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
   margin: 10px; /* Set margin */
+}
+
+/* styles.css */
+.recipe-image {
+  width: 400px; /* Set width of recipe image */
 }
 
 .result img {

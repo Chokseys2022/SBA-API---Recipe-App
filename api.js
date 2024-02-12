@@ -18,11 +18,11 @@ export async function getRecipe(query) {
   return response.json();
 }
 
-// Asynchronous function for making a POST request
+// Asynchronous funct for POST request
+
 export async function postRequest(data) {
-  // Replace with your actual POST endpoint
   const url = `${baseUrl}/api.spoonacular.com/recipes/complexSearch`;
-  // Fetch data from the constructed URL
+  // Fetch data
   const response = await fetch(url, {
     // Set request method to POST
     method: "POST",
@@ -30,14 +30,12 @@ export async function postRequest(data) {
     headers: {
       // Set content type to JSON
       "Content-Type": "application/json",
-      // Add other headers if necessary
     },
     // Convert data to JSON string
     body: JSON.stringify(data),
   });
-  // Check if the response is not OK
+
   if (!response.ok) {
-    // Throw an error if response is not OK
     throw new Error(`HTTP error! status: ${response.status}`);
   }
   // Return JSON data
