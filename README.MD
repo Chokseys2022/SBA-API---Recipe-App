@@ -20,9 +20,9 @@ This is a simple web application that allows users to search for recipes using a
 
 - `index.html`: Contains HTML structure of the web application.
 - `styles.css`: Contains CSS styles for the web application.
-- `script.js`: ContainsJ avaScript code for fetching and displaying recipes.
-- `api.js`: Contains functions for getting recipe data from the Spoonacular API.
-- `source.js`: Contains functions for getting the source of a recipe.
+- `recipeFetcher.js`: ContainsJ avaScript code for fetching and displaying recipes.
+- `recipeApi.js`: Contains functions for getting recipe data from the Spoonacular API.
+- `recipeSource.js`: Contains functions for getting the source of a recipe.
 - `README.md`: Contains information about the project.
 
 <!-- ******************************END OF README FILE******************************************* -->

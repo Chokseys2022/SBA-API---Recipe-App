@@ -1,4 +1,4 @@
-//api.js: Contains functions for fetching recipe data from the Spoonacular API.
+//recipeApi.js: Contains functions for fetching recipe data from the Spoonacular API.
 //*****************************************************************************//
 
 // Defining Spoonacular API key

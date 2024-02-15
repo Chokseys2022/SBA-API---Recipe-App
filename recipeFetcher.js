@@ -1,4 +1,4 @@
-//script.js- ContainsJ avaScript code for fetching and displaying recipes.
+//recipeFetcher.js- ContainsJ avaScript code for fetching and displaying recipes.
 //************************************************************************//
 
 // Event listener for when the DOM content is fully loaded
@@ -44,7 +44,8 @@ function getRecipe(query) {
             <h3>${result.title}</h3>
             <img src='${data.baseUri}${result.image}'>
             <div class='ready-in'>Cooking time: ${result.readyInMinutes} minutes</div>
-          </div>
+            <p>API Source: <a href="https://spoonacular.com/food-api" target="_blank">Spoonacular API</a></p>
+            </div>
         `;
 
         // Add event listener - source button
@@ -85,6 +86,5 @@ function getSource(recipeId) {
       console.error("Error fetching recipe source:", error);
     });
 }
-
 
 //**********************END CODE***************************************//

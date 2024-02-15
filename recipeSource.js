@@ -1,8 +1,8 @@
-// source.js - Contains functions for getting the source of a recipe.
+// recipeSource.js - Contains functions for getting the source of a recipe.
 //*******************************************************************//
 
 // Import apiKey from api.js
-import { apiKey } from "./api.js";
+import { apiKey } from "./recipeApi.js";
 
 // Async funct to get recipe source
 export async function getSource(recipeId) {
