@@ -44,8 +44,7 @@ function getRecipe(query) {
             <h3>${result.title}</h3>
             <img src='${data.baseUri}${result.image}'>
             <div class='ready-in'>Cooking time: ${result.readyInMinutes} minutes</div>
-            <p>API Source: <a href="https://spoonacular.com/food-api" target="_blank">Spoonacular API</a></p>
-            </div>
+              </div>
         `;
 
         // Add event listener - source button
