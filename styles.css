@@ -1,115 +1,101 @@
 /* styles.css - Contains styles for web application. */
 /*****************************************************/
 
-/* styles.css */
-
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body */
+/* Body Styles */
 body {
-  font-family: Arial, sans-serif;
   background-color: whitesmoke;
+  font-family: "Arial", "Times New Roman", Times, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
 }
 
-/* Container */
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: whitesmoke;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Heading */
+/* Heading Styles */
 h1 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
+  color: lightslategrey;
 }
 
-/* Search Container */
-.search-container {
+h3 {
+  color: lightslategrey;
+}
+
+/* Container Styles */
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-/* Input */
-input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  outline: none;
+/* Search Container Styles */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
 }
 
-/* Button */
+/* Input Styles */
+input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* Button Styles */
 button {
-  background-color: darkgreen;
-  border: none;
+  background-color: darkblue;
+  border: 0;
+  border-radius: 4px;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  outline: none;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: lightgreen;
+  background-color: darkgreen;
 }
 
-/* Result */
-.result {
-  margin-bottom: 20px;
+button:active {
+  transform: scale(0.7);
 }
 
-/* Result Image */
-.result img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Result Details */
-.result-details {
-  padding: 20px;
-  text-align: center;
-}
-
-.result-details h3 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.result-details .ready-in {
-  color: #666;
-  margin-top: 10px;
-}
-
-/* Source Button */
-#sourceButton {
-  background-color:darkblue;
-  border: none;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+button:focus {
   outline: none;
 }
 
-#sourceButton:hover {
-  background-color: blue;
+/* Result Styles */
+.result {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 700px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
 }
 
+/* Recipe Image Styles */
+.recipe-image {
+  width: 400px;
+}
+
+/* Result Image Styles */
+.result img {
+  object-fit: cover;
+  max-height: 70%;
+  max-width: 100%;
+}
 
 /***********************************END CODE***********************************/

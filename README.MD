@@ -1,28 +1,26 @@
-# Recipe Search Web Application
+# Recipe Search Web Application - connecting to an API
 
 This is a simple web application that allows users to search for recipes using a keyword. It fetches recipe data from the Spoonacular API and displays the results on the webpage. Users can also view the source of the recipe by clicking on the "Get the recipe" button.
 
-## How to use this application:
+## How to Use this application:
 
 1. Enter a keyword related to the recipe you are looking for in the search input field.
 2. Click on the "Search" button to retrieve recipes matching the keyword.
 3. The first matching recipe will be displayed along with its title, image, and cooking time.
 4. Click on the "Get the recipe" button to view the source of the recipe in a new tab.
 
-## Technologies used:
+## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
 - **Spoonacular API - https://spoonacular.com/food-api**
 
-## File structure:
+## File Structure
 
 - `index.html`: Contains HTML structure of the web application.
 - `styles.css`: Contains CSS styles for the web application.
-- `recipeFetcher.js`: ContainsJ avaScript code for fetching and displaying recipes.
-- `recipeApi.js`: Contains functions for getting recipe data from the Spoonacular API.
-- `recipeSource.js`: Contains functions for getting the source of a recipe.
+- `script.js`: ContainsJ avaScript code for fetching and displaying recipes.
+- `api.js`: Contains functions for getting recipe data from the Spoonacular API.
+- `source.js`: Contains functions for getting the source of a recipe.
 - `README.md`: Contains information about the project.
-
-<!-- ******************************END OF README FILE******************************************* -->

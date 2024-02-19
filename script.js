@@ -1,7 +1,5 @@
-//recipeFetcher.js- ContainsJ avaScript code for fetching and displaying recipes.
+//script.js- ContainsJ avaScript code for fetching and displaying recipes.
 //************************************************************************//
-
-// recipeFetcher.js - Contains JavaScript code for fetching and displaying recipes.
 
 // Event listener for when the DOM content is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
@@ -33,7 +31,7 @@ function getRecipe(query) {
     .then((data) => {
       // Check for results
       if (data.results.length > 0) {
-        // get first result
+        // get frst  result
         const result = data.results[0];
         // Get recipe ID
         const recipeId = result.id;
@@ -45,8 +43,7 @@ function getRecipe(query) {
           <div class='result' data-recipe-id='${recipeId}'>
             <h3>${result.title}</h3>
             <img src='${data.baseUri}${result.image}'>
-            <div class='ready-in'>Cooking time: ${result.readyInMinutes} minutes</div>
-          </div>
+         </div>
         `;
 
         // Add event listener - source button
@@ -87,6 +84,5 @@ function getSource(recipeId) {
       console.error("Error fetching recipe source:", error);
     });
 }
-
 
 //**********************END CODE***************************************//

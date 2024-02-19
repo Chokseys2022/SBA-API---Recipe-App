@@ -1,14 +1,12 @@
-//recipeApi.js: Contains functions for fetching recipe data from the Spoonacular API.
+//api.js: Contains functions for fetching recipe data from the Spoonacular API.
 //*****************************************************************************//
-
-// recipeApi.js - Contains functions for fetching recipe data from the Spoonacular API.
 
 // Defining Spoonacular API key
 const apiKey = "83391e00768640b29c383a671ab06380";
 // Define the base URL for the Spoonacular API
 const baseUrl = "https://api.spoonacular.com";
 
-// Function to fetch recipe data from Spoonacular API
+// Async funct to fetch recipes
 export async function getRecipe(query) {
   // url to fetch recipes
   const url = `${baseUrl}/recipes/complexSearch?apiKey=${apiKey}&query=${query}`;
@@ -21,7 +19,8 @@ export async function getRecipe(query) {
   return response.json();
 }
 
-// Function for POST request
+//Async funct for POST request
+
 export async function postRequest(data) {
   const url = `${baseUrl}/api.spoonacular.com/recipes/complexSearch`;
   // Fetch data
@@ -41,6 +40,4 @@ export async function postRequest(data) {
   //return JSON data
   return response.json();
 }
-
-
 // **********************************END CODE***********************************//
